@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header
+      class="flex flex-col gap-4 tablet:flex-row justify-between items-center p-4 desktop:p-20"
+    >
+      <div
+        class="font-display font-bold text-4xl bg-gradient-to-r from-sky-600 to-neutral-300 bg-clip-text text-transparent"
+      >
+        arifaeva
+      </div>
+      <nav
+        class="flex items-center bg-neutral-400 p-2 rounded-full font-medium text-md"
+      >
+        <a href="#" class="link linkActive"> All </a>
+        <a href="#about" class="link">About</a>
+        <a href="#porto-1" class="link">Projects</a>
+        <a href="#social-1" class="link">Social Media</a>
+      </nav>
+      <a
+        href="mailto:arifa.eva.ixa@gmail.com"
+        class="text-neutral-300 font-medium text-lg hidden tablet:block desktop:block"
+        >Contact</a
+      >
+    </header>
+
+    <!-- MAIN -->
+    <main
+      class="max-w-[1200px] m-auto flex flex-col tablet:grid tablet:grid-cols-2 p-6 desktop:p-0 desktop:grid desktop:grid-cols-4 desktop:grid-rows-4 gap-6 pb-14 desktop:pb-14"
+    >
+      <!-- Content-1 -->
+      <div
+        id="about"
+        class="card flex flex-col justify-end relative tablet:col-span-1 desktop:col-span-2 bg-neutral-400"
+      >
+        <div
+          class="absolute top-4 right-4 border border-neutral-800 px-4 py-2 rounded-full w-fit"
+        >
+          Available for work
+        </div>
+        <img
+          src="assets/icon 1.png"
+          width="100px"
+          height="100px"
+          class="mb-6"
+        />
+        <p>
+          Boo! Hellooo, my name is
+          <span class="text-2xl font-bold text-black"
+            >Arifa Eva Celinia Candra</span
+          >, but you can just call me Arifa. I'm currently learning website
+          development and data science. Nice to see you here!
+        </p>
+      </div>
+      <!-- Content-2 -->
+      <div
+        id="social-1"
+        class="card relative flex justify-center items-center bg-neutral-400"
+      >
+        <img src="assets/linkedin.png" width="160px" height="160px" />
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/arifa-eva-celinia-candra/"
+        >
+          <div
+            class="absolute left-4 bottom-4 text-white bg-black rounded-full p-1 hover:ring-2 hover:ring-neutral-400 transition duration-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="m6.5 17.5l11-11m0 0h-9m9 0v9"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+      <!-- Content-3  -->
+      <div
+        id="porto-1"
+        class="card relative desktop:row-span-2 bg-gradient-to-t from-sky-600 to-gray-400"
+      >
+        <h1 class="font-bold text-3xl">
+          Exploratory Data Analysis for Data Science
+        </h1>
+        <img src="assets/icon 5.png" width="200px" class="mt-40" />
+        <a
+          target="_blank"
+          href="https://github.com/arifaeva/EDA-data-science.git"
+        >
+          <div
+            class="absolute overflow-hidden group w-[32px] hover:w-[100px] flex justify-end items-center gap-1 left-4 bottom-4 text-white bg-black rounded-full py-1 px-1 hover:px-3 hover:ring-2 hover:ring-neutral-600 transition-all duration-200"
+          >
+            <p
+              class="absolute opacity-0 group-hover:opacity-100 -left-16 group-hover:left-2 transition-all duration-300 text-sm"
+            >
+              Portfolio
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="m6.5 17.5l11-11m0 0h-9m9 0v9"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+      <!-- Content-4 -->
+      <div
+        id="media-1"
+        class="card flex flex-col justify-center items-center bg-neutral-400"
+      >
+        <h1 id="message"></h1>
+      </div>
+      <!-- Content-5 -->
+      <div
+        id="media-2"
+        class="card flex justify-center items-center bg-neutral-400"
+      >
+        <img src="assets/icon 3.png" width="200px" height="200px" />
+      </div>
+      <!-- Content-6  -->
+      <div
+        id="porto-2"
+        class="card relative desktop:row-span-2 bg-gradient-to-t from-sky-600 to-gray-400"
+      >
+        <h1 class="font-bold text-3xl">Book Management App</h1>
+        <a target="_blank" href="https://book-management-app-mcg3.vercel.app/">
+          <div
+            class="absolute overflow-hidden group w-[32px] hover:w-[100px] flex justify-end items-center gap-1 left-4 bottom-4 text-white bg-black rounded-full py-1 px-1 hover:px-3 hover:ring-2 hover:ring-neutral-600 transition-all duration-200"
+          >
+            <p
+              class="absolute opacity-0 group-hover:opacity-100 -left-16 group-hover:left-2 transition-all duration-300 text-sm"
+            >
+              Portfolio
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="m6.5 17.5l11-11m0 0h-9m9 0v9"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+      <!-- Content-7 -->
+      <div
+        id="porto-3"
+        class="card desktop:col-span-2 relative bg-gradient-to-t from-sky-600 to-gray-400"
+      >
+        <h1 class="font-bold text-3xl">
+          Supervised Machine Learning: Regression
+        </h1>
+        <img
+          src="assets/icon 2.png"
+          width="120px"
+          class="absolute right-4 bottom-6"
+        />
+        <a
+          target="_blank"
+          href="https://github.com/arifaeva/machine-learning-regression.git"
+        >
+          <div
+            class="absolute overflow-hidden group w-[32px] hover:w-[100px] flex justify-end items-center gap-1 left-4 bottom-4 text-white bg-black rounded-full py-1 px-1 hover:px-3 hover:ring-2 hover:ring-neutral-600 transition-all duration-200"
+          >
+            <p
+              class="absolute opacity-0 group-hover:opacity-100 -left-16 group-hover:left-2 transition-all duration-300 text-sm"
+            >
+              Portfolio
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="m6.5 17.5l11-11m0 0h-9m9 0v9"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+      <!-- Content-8 -->
+      <div
+        id="social-2"
+        class="card relative flex justify-center items-center bg-sky-600"
+      >
+        <img src="assets/github.png" width="160px" height="160px" />
+        <a target="_blank" href="https://github.com/arifaeva">
+          <div
+            class="absolute left-4 bottom-4 text-white bg-black rounded-full p-1 hover:ring-2 hover:ring-neutral-400 transition duration-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="m6.5 17.5l11-11m0 0h-9m9 0v9"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+      <!-- Content-9 -->
+      <div
+        id="social-3"
+        class="card desktop:col-span-2 flex flex-col justify-between p-12 bg-sky-600"
+      >
+        <div>
+          <h1>Shall I keep you in the loop?</h1>
+          <p>Life is better with a cute ghost by your side.</p>
+        </div>
+        <input id="emailInput" placeholder="youremail@email.com" />
+        <button id="subscribeBtn">Subscribe ghost!</button>
+      </div>
+      <!-- Content-10 -->
+      <div
+        id="social-4"
+        class="card desktop:col-span-2 flex flex-col desktop:flex-row desktop:gap-14 desktop:justify-center gap-8 desktop:p-0 desktop:h-fit bg-sky-600"
+      >
+        <div class="space-y-1 flex flex-col justify-center gap-4">
+          <h1>Contact Me</h1>
+          <div class="space-y-4">
+            <div class="contact">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M20 18h-2V9.25L12 13L6 9.25V18H4V6h1.2l6.8 4.25L18.8 6H20m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"
+                />
+              </svg>
+              <p>arifa.eva.ixa@gmail.com</p>
+            </div>
+            <div class="contact">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
+                />
+              </svg>
+              <p>Arifa Eva Celinia Candra</p>
+            </div>
+            <div class="contact">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4.44c-.32-.07-.33-.68-.33-.89l.01-2.47c0-.84-.29-1.39-.61-1.67c2.01-.22 4.11-.97 4.11-4.44c0-.98-.35-1.79-.92-2.42c.09-.22.4-1.14-.09-2.38c0 0-.76-.23-2.48.93c-.72-.2-1.48-.3-2.25-.31c-.76.01-1.54.11-2.25.31c-1.72-1.16-2.48-.93-2.48-.93c-.49 1.24-.18 2.16-.09 2.38c-.57.63-.92 1.44-.92 2.42c0 3.47 2.1 4.22 4.1 4.47c-.26.2-.49.6-.57 1.18c-.52.23-1.82.63-2.62-.75c0 0-.48-.86-1.38-.93c0 0-.88 0-.06.55c0 0 .59.28 1 1.32c0 0 .52 1.75 3.03 1.21l.01 1.53c0 .21-.02.82-.34.89H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"
+                  fill="currentColor"
+                />
+              </svg>
+              <p class="text-md">github.com/arifaeva</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex desktop:items-center tablet:justify-end">
+          <img src="assets/icon 4.png" width="160" class="bg-cover" />
+        </div>
+      </div>
+    </main>
+    <script src="../dist/main.js"></script>
+  </body>
+</html>
